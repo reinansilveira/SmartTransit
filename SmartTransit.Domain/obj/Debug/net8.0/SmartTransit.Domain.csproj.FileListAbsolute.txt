@@ -1,0 +1,14 @@
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Domain\bin\Debug\net8.0\SmartTransit.Domain.exe
+C:\Users\Reinan\RiderProjects\Smarttransit\SmartTransit.Domain\bin\Debug\net8.0\SmartTransit.Domain.deps.json
+C:\Users\Reinan\RiderProjects\Smarttransit\SmartTransit.Domain\bin\Debug\net8.0\SmartTransit.Domain.runtimeconfig.json
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Domain\bin\Debug\net8.0\SmartTransit.Domain.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Domain\bin\Debug\net8.0\SmartTransit.Domain.pdb
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Domain\obj\Debug\net8.0\SmartTransit.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Domain\obj\Debug\net8.0\SmartTransit.Domain.AssemblyInfoInputs.cache
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Domain\obj\Debug\net8.0\SmartTransit.Domain.AssemblyInfo.cs
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Domain\obj\Debug\net8.0\SmartTransit.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Domain\obj\Debug\net8.0\SmartTransit.Domain.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Domain\obj\Debug\net8.0\refint\SmartTransit.Domain.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Domain\obj\Debug\net8.0\SmartTransit.Domain.pdb
+C:\Users\Reinan\RiderProjects\Smarttransit\SmartTransit.Domain\obj\Debug\net8.0\SmartTransit.Domain.genruntimeconfig.cache
+C:\Users\Reinan\RiderProjects\Smarttransit\SmartTransit.Domain\obj\Debug\net8.0\ref\SmartTransit.Domain.dll
