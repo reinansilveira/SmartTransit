@@ -10,6 +10,7 @@ public class SmartTransitDbContext : DbContext
         {
         }
 
+        public DbSet<UserEntity> UserEntities { get; set; }
         public DbSet<LineEntity> LineEntities { get; set; }
         public DbSet<StopEntity> StopEntities { get; set; }
         public DbSet<VehicleEntity> VehicleEntities { get; set; }

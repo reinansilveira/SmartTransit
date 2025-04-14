@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartTransit.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76566c07caeec6873988c35b74b87da62a1016a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartTransit.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartTransit.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

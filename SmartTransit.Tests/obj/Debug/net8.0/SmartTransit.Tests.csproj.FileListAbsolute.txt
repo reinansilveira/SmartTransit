@@ -91,6 +91,7 @@ C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Tests\obj\Debug\net8.0\S
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Tests\obj\Debug\net8.0\SmartTransit.Tests.AssemblyInfoInputs.cache
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Tests\obj\Debug\net8.0\SmartTransit.Tests.AssemblyInfo.cs
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Tests\obj\Debug\net8.0\SmartTransit.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Tests\obj\Debug\net8.0\SmartTransit.Tests.sourcelink.json
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Tests\obj\Debug\net8.0\SmartTra.B643B25A.Up2Date
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Tests\obj\Debug\net8.0\SmartTransit.Tests.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Tests\obj\Debug\net8.0\refint\SmartTransit.Tests.dll
