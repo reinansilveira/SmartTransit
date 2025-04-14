@@ -1,4 +1,4 @@
-namespace SmartTransit.Application.Resource;
+namespace SmartTransit.Application.Resource.Stop;
 
 public class StopResource
 {

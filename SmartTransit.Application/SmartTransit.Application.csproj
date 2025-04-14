@@ -21,6 +21,7 @@
 
     <ItemGroup>
       <PackageReference Include="AutoMapper" Version="14.0.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.1" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -31,9 +32,14 @@
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         <PrivateAssets>all</PrivateAssets>
       </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.4" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.3" />
       <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.0" />
       <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Filters\" />
     </ItemGroup>
 
 </Project>

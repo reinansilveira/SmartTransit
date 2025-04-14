@@ -10,8 +10,10 @@ C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\ne
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\SmartTransit.Application.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\SmartTransit.Application.pdb
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Humanizer.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
@@ -23,6 +25,10 @@ C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\ne
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\MySqlConnector.dll
@@ -36,6 +42,7 @@ C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\ne
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\System.Composition.Hosting.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\System.Composition.Runtime.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -97,9 +104,16 @@ C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\obj\Debug\ne
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\obj\Debug\net8.0\SmartTransit.Application.AssemblyInfoInputs.cache
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\obj\Debug\net8.0\SmartTransit.Application.AssemblyInfo.cs
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\obj\Debug\net8.0\SmartTransit.Application.csproj.CoreCompileInputs.cache
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\obj\Debug\net8.0\SmartTransit.Application.sourcelink.json
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\obj\Debug\net8.0\SmartTra.712E0E9B.Up2Date
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\obj\Debug\net8.0\SmartTransit.Application.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\obj\Debug\net8.0\refint\SmartTransit.Application.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\obj\Debug\net8.0\SmartTransit.Application.pdb
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\obj\Debug\net8.0\SmartTransit.Application.genruntimeconfig.cache
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\obj\Debug\net8.0\ref\SmartTransit.Application.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

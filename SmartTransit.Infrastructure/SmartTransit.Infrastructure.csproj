@@ -1,33 +1,63 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Database\" />
+        <Folder Include="Database\" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\SmartTransit.Domain\SmartTransit.Domain.csproj" />
+        <ProjectReference Include="..\SmartTransit.Domain\SmartTransit.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="AutoMapper" Version="14.0.0" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        <PrivateAssets>all</PrivateAssets>
-      </PackageReference>
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.0" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        <PrivateAssets>all</PrivateAssets>
-      </PackageReference>
-      <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.0" />
+        <PackageReference Include="AutoMapper" Version="14.0.0" />
+        <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.0" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.8.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Include="EntitiesConfiguration\LineDatabaseConfiguration.cs" />
+      <Compile Include="EntitiesConfiguration\StopDatabaseConfiguration.cs" />
+      <Compile Include="EntitiesConfiguration\UserDatabaseConfiguration.cs" />
+      <Compile Include="EntitiesConfiguration\VehicleDatabaseConfiguration.cs" />
+      <Compile Include="EntitiesConfiguration\VehiclePositionDatabase.cs" />
+      <Compile Include="Entities\Line\LineEntity.cs" />
+      <Compile Include="Entities\Line\LineResponseEntity.cs" />
+      <Compile Include="Entities\Stop\StopEntity.cs" />
+      <Compile Include="Entities\User\UserEntity.cs" />
+      <Compile Include="Entities\VehiclePosition\VehiclePositionEntity.cs" />
+      <Compile Include="Entities\Vehicle\VehicleEntity.cs" />
+      <Compile Include="Migrations\20250410134345_InitialCreate.cs" />
+      <Compile Include="Migrations\20250410134345_InitialCreate.Designer.cs" />
+      <Compile Include="Migrations\SmartTransitDbContextModelSnapshot.cs" />
+      <Compile Include="Persistence\SmartTransitDbContext.cs" />
+      <Compile Include="Program.cs" />
+      <Compile Include="Repositories\LineRepository.cs" />
+      <Compile Include="Repositories\StopRepository.cs" />
+      <Compile Include="Repositories\UserRepository.cs" />
+      <Compile Include="Repositories\VehiclePositionRepository.cs" />
+      <Compile Include="Repositories\VehicleRepository.cs" />
+      <Compile Include="Security\Criptography\BCryptNet.cs" />
+      <Compile Include="Security\Tokens\Acess\Generator\JwtService.cs" />
+      <Compile Include="Security\Tokens\Acess\Validator\JwtTokenValidator.cs" />
+      <Compile Include="Security\Tokens\JwtTokenHandler.cs" />
+    </ItemGroup>
 </Project>

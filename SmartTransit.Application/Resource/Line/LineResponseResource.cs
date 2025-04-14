@@ -1,4 +1,6 @@
-namespace SmartTransit.Application.Resource;
+using SmartTransit.Application.Resource.Stop;
+
+namespace SmartTransit.Application.Resource.Line;
 
 public class LineResponseResource
 {

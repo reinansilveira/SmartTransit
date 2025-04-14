@@ -1,27 +1,19 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using SmartTransit.Application.Mappings;
+using Microsoft.Extensions.Configuration;
+using SmartTransit.Application.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// Configuração dos serviços e DI da camada Application
+builder.Services.AddDependencyInjection(builder.Configuration);
 
-
-//builder.Services.AddDependencyInjection(builder.Configuration);
-
-
-builder.Services.AddControllers(options =>
-{
-    options.Filters.Add(typeof(ObjectRequestFilterAttribute));  
-});
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
-app.UseSwagger();
-app.UseSwaggerUI();
+// Mapeamento dos controllers
+app.MapControllers();
 
-app.UseHttpsRedirection();
-
-
+// Inicia a aplicação
 app.Run();

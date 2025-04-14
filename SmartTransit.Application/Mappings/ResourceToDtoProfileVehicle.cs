@@ -1,5 +1,6 @@
 using AutoMapper;
 using SmartTransit.Application.Resource;
+using SmartTransit.Application.Resource.Vehicle;
 using SmartTransit.Domain.Domains.DTO;
 using SmartTransit.Infrastructure.Entities;
 

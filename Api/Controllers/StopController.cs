@@ -1,6 +1,8 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using SmartTransit.Application.Resource;
+using SmartTransit.Application.Resource.Line;
+using SmartTransit.Application.Resource.Stop;
 using SmartTransit.Domain.Domains.DTO;
 using SmartTransit.Domain.Domains.Exceptions;
 using SmartTransit.Domain.UseCases.Stop;
