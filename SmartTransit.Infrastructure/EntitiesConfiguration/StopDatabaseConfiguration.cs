@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SmartTransit.Infrastructure.Entities;
+using SmartTransit.Infrastructure.Entities.Stop;
 
 namespace SmartTransit.Infrastructure.EntitiesConfiguration;
 

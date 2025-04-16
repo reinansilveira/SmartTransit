@@ -4,7 +4,11 @@ namespace SmartTransit.Domain.Gateway.Line;
 
 public interface ILineRepositoryGateway
 {
-    Task<LineResponseDTO?> Create(LineCreateDTO line);
+    Task<LineResponseDTO> Create(LineCreateDTO line);
+
+    Task<LineDTO?> AddStop(LineCreateDTO line, long lineId);
+
+    Task<LineDTO?> RemoveStop(LineCreateDTO line, long lineId);
 
     Task<LineDTO?> Update(LineCreateDTO line, long lineId);
 

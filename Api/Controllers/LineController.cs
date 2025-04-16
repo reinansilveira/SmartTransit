@@ -5,6 +5,7 @@ using SmartTransit.Application.Resource.Line;
 using SmartTransit.Domain.Domains.DTO;
 using SmartTransit.Domain.Domains.Exceptions;
 using SmartTransit.Domain.UseCases;
+using SmartTransit.Domain.UseCases.Line;
 
 namespace Api.Controllers;
 
@@ -36,6 +37,39 @@ public class LineController : ControllerBase
             return StatusCode(exception.StatusCode, exception.Message);
         }
     }
+    
+    [HttpPut("add-stop/{lineId}")]
+    public async Task<IActionResult> AddStop(LineCreateResource request, long lineId)
+    {
+        try
+        {
+            var lineDto = _mapper.Map<LineCreateDTO>(request);
+            var lineUpdateDto = await _lineCrudUseCases.AddStop(lineDto, lineId);
+            var response = _mapper.Map<LineResource>(lineUpdateDto);
+            return StatusCode(200, response);
+        }
+        catch (SmartTransitBaseException exception)
+        {
+            return StatusCode(exception.StatusCode, exception.Message);
+        }
+    }
+    
+    [HttpPut("remove-stop/{lineId}")]
+    public async Task<IActionResult> RemoveStop(LineCreateResource request, long lineId)
+    {
+        try
+        {
+            var lineDto = _mapper.Map<LineCreateDTO>(request);
+            var lineUpdateDto = await _lineCrudUseCases.RemoveStop(lineDto, lineId);
+            var response = _mapper.Map<LineResource>(lineUpdateDto);
+            return StatusCode(200, response);
+        }
+        catch (SmartTransitBaseException exception)
+        {
+            return StatusCode(exception.StatusCode, exception.Message);
+        }
+    }
+    
 
     [HttpPut("{lineId}")]
     public async Task<IActionResult> Update(LineCreateResource request, long lineId)

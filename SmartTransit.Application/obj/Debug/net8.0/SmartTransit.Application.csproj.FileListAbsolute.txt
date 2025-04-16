@@ -117,3 +117,4 @@ C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\ne
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Newtonsoft.Json.dll

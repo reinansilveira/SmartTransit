@@ -110,3 +110,4 @@ C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Infrastructure\obj\Debug
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Infrastructure\obj\Debug\net8.0\SmartTransit.Infrastructure.pdb
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Infrastructure\obj\Debug\net8.0\SmartTransit.Infrastructure.genruntimeconfig.cache
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Infrastructure\obj\Debug\net8.0\ref\SmartTransit.Infrastructure.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Infrastructure\bin\Debug\net8.0\Newtonsoft.Json.dll

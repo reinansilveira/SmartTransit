@@ -12,8 +12,8 @@ public class JwtService : IJwtCrudUseCase
 {
     private readonly string? _signingKey;  
     private readonly int _expirationTimeMinutes;  
-    private readonly string _issuer;
-    private readonly string _audience;
+    private readonly string? _issuer;
+    private readonly string? _audience;
 
     public JwtService(IConfiguration config)
     {

@@ -1,8 +1,12 @@
+using System.Text.Json;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using SmartTransit.Domain.Domains.DTO;
+using SmartTransit.Domain.Domains.Exceptions;
 using SmartTransit.Domain.Gateway.Line;
 using SmartTransit.Infrastructure.Entities;
+using SmartTransit.Infrastructure.Entities.Stop;
 using SmartTransit.Infrastructure.Persistence;
 
 namespace SmartTransit.Infrastructure.Repositories;
@@ -31,6 +35,62 @@ public class LineRepository : ILineRepositoryGateway
         return _mapper.Map<LineResponseDTO>(lineEntity);
     }
 
+    public async Task<LineDTO?> AddStop(LineCreateDTO line, long lineId)
+    {
+        var lineExist = await _lines.LineEntities
+            .FirstOrDefaultAsync(item => item.Id == lineId);
+
+        if (lineExist == null)
+        {
+            return null;
+        }
+
+        var currentStops = lineExist.Stops?.ToList() ?? new List<StopEntity>();
+
+        var stopExist = await _lines.StopEntities
+            .Where(item => line.Stops.Contains(item.Id))
+            .ToListAsync();
+
+        foreach (var stop in stopExist)
+        {
+            if (!currentStops.Any(s => s.Id == stop.Id))
+            {
+                currentStops.Add(stop);
+            }
+        }
+        
+        lineExist.Stops = currentStops;
+        
+        await _lines.SaveChangesAsync();
+
+        return _mapper.Map<LineDTO>(lineExist);
+    }
+
+    public async Task<LineDTO?> RemoveStop(LineCreateDTO line, long lineId)
+    {
+        var lineExist = await _lines.LineEntities
+            .FirstOrDefaultAsync(item => item.Id == lineId);
+
+        if (lineExist == null)
+        {
+            return null; 
+        }
+
+        var currentStops = lineExist.Stops?.ToList() ?? new List<StopEntity>();
+        
+        var stopExist = await _lines.StopEntities
+            .Where(item => line.Stops.Contains(item.Id))
+            .ToListAsync();
+        
+        currentStops.RemoveAll(s => stopExist.Any(stopToRemove => stopToRemove.Id == s.Id));
+        
+        lineExist.Stops = currentStops;
+
+        await _lines.SaveChangesAsync();
+        
+        return _mapper.Map<LineDTO>(lineExist);
+    }
+    
     public async Task<LineDTO?> Update(LineCreateDTO line, long lineId)
     {
         var lineExist = await _lines.LineEntities.FirstOrDefaultAsync(item => item.Id == lineId);

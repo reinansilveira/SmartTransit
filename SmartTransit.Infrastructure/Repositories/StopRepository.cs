@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using SmartTransit.Domain.Domains.DTO;
 using SmartTransit.Domain.Gateway.Stop;
 using SmartTransit.Infrastructure.Entities;
+using SmartTransit.Infrastructure.Entities.Stop;
 using SmartTransit.Infrastructure.Persistence;
 
 namespace SmartTransit.Infrastructure.Repositories;

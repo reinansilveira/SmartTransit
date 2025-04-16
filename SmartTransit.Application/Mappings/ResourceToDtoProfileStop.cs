@@ -3,6 +3,7 @@ using SmartTransit.Application.Resource;
 using SmartTransit.Application.Resource.Stop;
 using SmartTransit.Domain.Domains.DTO;
 using SmartTransit.Infrastructure.Entities;
+using SmartTransit.Infrastructure.Entities.Stop;
 
 namespace SmartTransit.Application.Mappings;
 

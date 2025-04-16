@@ -10,6 +10,7 @@ using SmartTransit.Domain.Gateway.VehiclePosition;
 using SmartTransit.Domain.Security.Criptography;
 using SmartTransit.Domain.Services;
 using SmartTransit.Domain.UseCases;
+using SmartTransit.Domain.UseCases.Line;
 using SmartTransit.Domain.UseCases.Login;
 using SmartTransit.Domain.UseCases.Stop;
 using SmartTransit.Domain.UseCases.User;
