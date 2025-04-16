@@ -1747,6 +1747,7 @@
           "BCrypt.Net-Next": "4.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.0",
+          "Newtonsoft.Json": "13.0.1",
           "Pomelo.EntityFrameworkCore.MySql": "8.0.0",
           "SmartTransit.Domain": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.8.0"

@@ -7,7 +7,7 @@ public class SmartTransitBaseException : Exception
     public int StatusCode { get; set; }
     public string ErrorMessage { get; set; }
 
-    public SmartTransitBaseException() : base("AikoBaseException exception error.")
+    public SmartTransitBaseException() : base("SmartTransitBaseException exception error.")
     {
         StatusCode = (int)HttpStatusCode.InternalServerError;
     }

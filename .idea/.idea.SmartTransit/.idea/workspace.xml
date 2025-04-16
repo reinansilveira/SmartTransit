@@ -14,44 +14,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e27c3922-7d46-4654-b90a-a667425cf8c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Api/Controllers/UserController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Application/Mappings/ResourceToDtoProfileUser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Application/Resource/Login/LoginResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Application/Resource/Login/LoginResponseResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Application/Resource/Login/RefreshTokenResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Application/Resource/User/UserResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Application/Resource/User/UserResponseResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/LoginDTO/LoginDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/LoginDTO/LoginResponseDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/UserDTO/UserDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/Gateway/User/IUserRepositoryGateway.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/Security/Criptography/IPasswordEncripter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/Security/Tokens/IAccessTokenValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/Security/Tokens/IRefreshTokenGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/Security/Tokens/ITokenProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/Services/LoginCrudUseService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/Services/RefreshTokenCrudUseService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/Services/UserCrudUseService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/UseCases/Login/ILoginCrudUseCase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/UseCases/TokenJwt/IJwtCrudUseCase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/UseCases/TokenJwt/IRefreshTokenCrudUseCase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/UseCases/User/IUserCrudUseCases.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/Entities/User/UserEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/EntitiesConfiguration/UserDatabaseConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/Repositories/UserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/Security/Criptography/BCryptNet.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/Security/Tokens/Acess/Generator/JwtService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/Security/Tokens/Acess/Validator/JwtTokenValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/Security/Tokens/JwtTokenHandler.cs" afterDir="false" />
+    <list default="true" id="e27c3922-7d46-4654-b90a-a667425cf8c0" name="Changes" comment="feat: implement user endpoint and JWT authentication&#10;&#10;- Added user endpoint with basic CRUD operations&#10;- Integrated JWT-based authentication for secure access&#10;- Created middleware to validate JWT tokens on protected routes&#10;- Ensured proper response handling and error messages&#10;- Updated documentation for new endpoint and auth flow">
+      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/Domains/Exceptions/LineDoesNotExisException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTransit.Domain/Domains/Exceptions/StopDoesNotExistException.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SmartTransit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SmartTransit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Api.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/Controllers/LineController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Controllers/LineController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Controllers/StopController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Controllers/StopController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Controllers/VehicleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Controllers/VehicleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Controllers/VehiclePositionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Controllers/VehiclePositionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/bin/Debug/net8.0/Api.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/bin/Debug/net8.0/Api.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/bin/Debug/net8.0/Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Api/bin/Debug/net8.0/Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/bin/Debug/net8.0/Api.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Api/bin/Debug/net8.0/Api.exe" afterDir="false" />
@@ -67,17 +34,10 @@
       <change beforePath="$PROJECT_DIR$/Api/bin/Debug/net8.0/SmartTransit.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Api/bin/Debug/net8.0/SmartTransit.Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/bin/Debug/net8.0/SmartTransit.Infrastructure.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Api/bin/Debug/net8.0/SmartTransit.Infrastructure.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/bin/Debug/net8.0/SmartTransit.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Api/bin/Debug/net8.0/SmartTransit.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/bin/Debug/net8.0/SmartTransit.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Api/bin/Debug/net8.0/SmartTransit.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/bin/Debug/net8.0/SmartTransit.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Api/bin/Debug/net8.0/SmartTransit.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/bin/Debug/net8.0/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Api.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/obj/Api.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Api.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/apphost.exe" afterDir="false" />
@@ -85,20 +45,9 @@
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/refint/Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/refint/Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Application/DependencyInjection/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/DependencyInjection/DependencyInjection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Application/Mappings/ResourceToDtoProfileLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/Mappings/ResourceToDtoProfileLine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Application/Mappings/ResourceToDtoProfileStop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/Mappings/ResourceToDtoProfileStop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Application/Mappings/ResourceToDtoProfileVehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/Mappings/ResourceToDtoProfileVehicle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Application/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Application/Resource/LineCreateResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/Resource/Line/LineCreateResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Application/Resource/LineResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/Resource/Line/LineResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Application/Resource/LineResponseResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/Resource/Line/LineResponseResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Application/Resource/StopResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/Resource/Stop/StopResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Application/Resource/VehiclePositionResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/Resource/VehiclePosition/VehiclePositionResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Application/Resource/VehicleResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/Resource/Vehicle/VehicleResource.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Application/SmartTransit.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/SmartTransit.Application.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Application/bin/Debug/net8.0/SmartTransit.Application.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/bin/Debug/net8.0/SmartTransit.Application.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Application/bin/Debug/net8.0/SmartTransit.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/bin/Debug/net8.0/SmartTransit.Application.dll" afterDir="false" />
@@ -123,46 +72,27 @@
       <change beforePath="$PROJECT_DIR$/SmartTransit.Application/obj/Debug/net8.0/ref/SmartTransit.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/obj/Debug/net8.0/ref/SmartTransit.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Application/obj/Debug/net8.0/refint/SmartTransit.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/obj/Debug/net8.0/refint/SmartTransit.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Application/obj/SmartTransit.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/obj/SmartTransit.Application.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Application/obj/SmartTransit.Application.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/obj/SmartTransit.Application.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/LineCreateDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/LineDTO/LineCreateDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/LineDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/LineDTO/LineDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/LineResponseDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/LineDTO/LineResponseDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/StopDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/StopDTO/StopDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/VehicleDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/VehicleDTO/VehicleDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/VehiclePositionDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/Domains/DTO/VehiclePositionDTO/VehiclePositionDTO.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/Domains/Exceptions/SmartTransitBaseException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/Domains/Exceptions/SmartTransitBaseException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/Gateway/Line/ILineRepositoryGateway.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/Gateway/Line/ILineRepositoryGateway.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/Services/LineCrudUseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/Services/LineCrudUseService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/UseCases/Line/ILineCrudUseCases.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/UseCases/Line/ILineCrudUseCases.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/bin/Debug/net8.0/SmartTransit.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/bin/Debug/net8.0/SmartTransit.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/bin/Debug/net8.0/SmartTransit.Domain.exe" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/bin/Debug/net8.0/SmartTransit.Domain.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/bin/Debug/net8.0/SmartTransit.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/bin/Debug/net8.0/SmartTransit.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/SmartTransit.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/SmartTransit.Domain.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/SmartTransit.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/SmartTransit.Domain.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/SmartTransit.Domain.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/SmartTransit.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/SmartTransit.Domain.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/SmartTransit.Domain.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/SmartTransit.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/SmartTransit.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/SmartTransit.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/SmartTransit.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/ref/SmartTransit.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/ref/SmartTransit.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/refint/SmartTransit.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/Debug/net8.0/refint/SmartTransit.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/SmartTransit.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/SmartTransit.Domain.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/Entities/LineEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/Entities/Line/LineEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/Entities/LineResponseEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/Entities/Line/LineResponseEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/Entities/StopEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/Entities/Stop/StopEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/Entities/VehicleEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/Entities/Vehicle/VehicleEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/Entities/VehiclePositionEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/Entities/VehiclePosition/VehiclePositionEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/Migrations/20250403022752_InitialMigration.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/Migrations/20250403022752_InitialMigration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/Migrations/SmartTransitDbContextModelSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/Persistence/SmartTransitDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/Persistence/SmartTransitDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/Repositories/LineRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/Repositories/LineRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/Security/Tokens/Acess/Generator/JwtService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/Security/Tokens/Acess/Generator/JwtService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/SmartTransit.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/SmartTransit.Infrastructure.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/bin/Debug/net8.0/SmartTransit.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/bin/Debug/net8.0/SmartTransit.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/bin/Debug/net8.0/SmartTransit.Domain.exe" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/bin/Debug/net8.0/SmartTransit.Domain.exe" afterDir="false" />
@@ -188,21 +118,8 @@
       <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/bin/Debug/net8.0/SmartTransit.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/bin/Debug/net8.0/SmartTransit.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/bin/Debug/net8.0/SmartTransit.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/bin/Debug/net8.0/SmartTransit.Tests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/SmartTransit.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/SmartTransit.Tests.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/SmartTransit.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/SmartTransit.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/SmartTransit.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/SmartTransit.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/SmartTransit.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/SmartTransit.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/SmartTransit.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/SmartTransit.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/SmartTransit.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/SmartTransit.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/ref/SmartTransit.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/ref/SmartTransit.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/refint/SmartTransit.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/obj/Debug/net8.0/refint/SmartTransit.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/obj/SmartTransit.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/obj/SmartTransit.Tests.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTransit.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTransit.Tests/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -232,6 +149,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0c53ee5c91f047f387400d094b3581c4267420/39/82a6c3d8/IRegisteredServices.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/51550674e7644fa2a26799b46b68aa471de928/d8/5b80faa7/TypeFilterAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5aeb6167299d4cfba30c86624130edbcc90938/71/796311aa/String.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/649f9a5315084d038b64e29ea11b1fb56d20/89/f5ca6295/IConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f99c24564525471da0978d060b644a9540928/14/dbcdb8bd/ExceptionContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f99c24564525471da0978d060b644a9540928/d5/9980d2c3/IAsyncAuthorizationFilter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/117275599da316d4e45c62326f3097e45f8b5b17d8fe17bbcf9ca86b0819b16/ResourceInvoker.cs" root0="FORCE_HIGHLIGHTING" />
@@ -277,7 +195,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Api: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.Api: https.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;feature/crud-user&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Reinan/RiderProjects/SmartTransit&quot;,
@@ -286,6 +204,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -508,7 +427,17 @@
       <workItem from="1744287304761" duration="15414000" />
       <workItem from="1744382243740" duration="9198000" />
       <workItem from="1744402166764" duration="7928000" />
+      <workItem from="1744645511271" duration="23144000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: implement user endpoint and JWT authentication&#10;&#10;- Added user endpoint with basic CRUD operations&#10;- Integrated JWT-based authentication for secure access&#10;- Created middleware to validate JWT tokens on protected routes&#10;- Ensured proper response handling and error messages&#10;- Updated documentation for new endpoint and auth flow">
+      <option name="closed" value="true" />
+      <created>1744646943221</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744646943221</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,6 +448,8 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="feat: implement user endpoint and JWT authentication&#10;&#10;- Added user endpoint with basic CRUD operations&#10;- Integrated JWT-based authentication for secure access&#10;- Created middleware to validate JWT tokens on protected routes&#10;- Ensured proper response handling and error messages&#10;- Updated documentation for new endpoint and auth flow" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implement user endpoint and JWT authentication&#10;&#10;- Added user endpoint with basic CRUD operations&#10;- Integrated JWT-based authentication for secure access&#10;- Created middleware to validate JWT tokens on protected routes&#10;- Ensured proper response handling and error messages&#10;- Updated documentation for new endpoint and auth flow" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -548,6 +479,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SmartTransit.Domain/Services/LineCrudUseService.cs</url>
+          <line>137</line>
+          <properties documentPath="C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Domain\Services\LineCrudUseService.cs" containingFunctionPresentation="Method 'GetLineStopIds'">
+            <startOffsets>
+              <option value="4631" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4694" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

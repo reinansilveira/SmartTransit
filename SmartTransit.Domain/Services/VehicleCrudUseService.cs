@@ -1,4 +1,5 @@
 using SmartTransit.Domain.Domains.DTO;
+using SmartTransit.Domain.Domains.Exceptions;
 using SmartTransit.Domain.Gateway.Vehicle;
 using SmartTransit.Domain.UseCases.Vehicle;
 
@@ -20,11 +21,13 @@ public class VehicleCrudUseService : IVehicleCrudUseCases
 
     public async Task<VehicleDTO?> Update(VehicleDTO vehicle, long vehicleId)
     {
+        await EnsureVehicleExists(vehicleId);
         return await _vehicleRepositoryGateway.Update(vehicle, vehicleId);
     }
 
     public async Task<VehicleDTO?> Delete(long vehicleId)
     {
+        await EnsureVehicleExists(vehicleId);
         return await _vehicleRepositoryGateway.Delete(vehicleId);
     }
 
@@ -35,6 +38,17 @@ public class VehicleCrudUseService : IVehicleCrudUseCases
 
     public async Task<VehicleDTO?> GetById(long vehicleId)
     {
-        return await _vehicleRepositoryGateway.GetById(vehicleId);
+        return await EnsureVehicleExists(vehicleId);
+    }
+    
+    private async Task<VehicleDTO> EnsureVehicleExists(long vehicleId)
+    {
+        var vehicle = await _vehicleRepositoryGateway.GetById(vehicleId);
+        if (vehicle == null)
+        {
+            throw new SmartTransitBaseException($"Vehicle with ID {vehicleId} does not exist.");
+        }
+
+        return vehicle;
     }
 }

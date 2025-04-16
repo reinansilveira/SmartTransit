@@ -1,3 +1,5 @@
+using SmartTransit.Infrastructure.Entities.Stop;
+
 namespace SmartTransit.Infrastructure.Entities;
 
 public class LineEntity

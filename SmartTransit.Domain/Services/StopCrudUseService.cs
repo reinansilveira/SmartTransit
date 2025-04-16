@@ -1,4 +1,5 @@
 using SmartTransit.Domain.Domains.DTO;
+using SmartTransit.Domain.Domains.Exceptions;
 using SmartTransit.Domain.Gateway.Stop;
 using SmartTransit.Domain.UseCases.Stop;
 
@@ -20,16 +21,29 @@ public class StopCrudUseService : IStopCrudUseCases
 
     public async Task<StopDTO> Update(StopDTO stop, long stopId)
     {
+        await EnsureStopExists(stopId);
         return await _stopRepositoryGateway.Update(stop, stopId);
     }
 
     public async Task<StopDTO> Delete(long stopId)
     {
+        await EnsureStopExists(stopId);
         return await _stopRepositoryGateway.Delete(stopId);
     }
 
     public async Task<StopDTO> GetById(long stopId)
     {
-       return await _stopRepositoryGateway.GetById(stopId);
+        return await EnsureStopExists(stopId);
+    }
+    
+    private async Task<StopDTO> EnsureStopExists(long stopId)
+    {
+        var stop = await _stopRepositoryGateway.GetById(stopId);
+        if (stop == null)
+        {
+            throw new StopDoesNotExistException(404, $"Stop with ID {stopId} does not exist.");
+        }
+
+        return stop;
     }
 }
