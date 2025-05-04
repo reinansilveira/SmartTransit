@@ -1,4 +1,4 @@
-namespace SmartTransit.Infrastructure.Entities;
+namespace SmartTransit.Infrastructure.Entities.VehiclePosition;
 
 public class VehiclePositionEntity
 {

@@ -118,3 +118,6 @@ C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\ne
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Reinan\RiderProjects\SmartTransit\SmartTransit.Application\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

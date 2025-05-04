@@ -1,8 +1,10 @@
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using SmartTransit.Domain.Domains.DTO;
+using SmartTransit.Domain.Domains.DTO.VehiclePositionDTO;
 using SmartTransit.Domain.Gateway.VehiclePosition;
 using SmartTransit.Infrastructure.Entities;
+using SmartTransit.Infrastructure.Entities.VehiclePosition;
 using SmartTransit.Infrastructure.Persistence;
 
 namespace SmartTransit.Infrastructure.Repositories;

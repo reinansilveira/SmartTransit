@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using SmartTransit.Application.Resource;
 using SmartTransit.Application.Resource.VehiclePosition;
 using SmartTransit.Domain.Domains.DTO;
+using SmartTransit.Domain.Domains.DTO.VehiclePositionDTO;
 using SmartTransit.Domain.Domains.Exceptions;
 using SmartTransit.Domain.UseCases.VehiclePosition;
 

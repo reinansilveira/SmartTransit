@@ -39,11 +39,11 @@ public class LineController : ControllerBase
     }
     
     [HttpPut("add-stop/{lineId}")]
-    public async Task<IActionResult> AddStop(LineCreateResource request, long lineId)
+    public async Task<IActionResult> AddStop(LineUpdateStopResource lineRequest, long lineId)
     {
         try
         {
-            var lineDto = _mapper.Map<LineCreateDTO>(request);
+            var lineDto = _mapper.Map<LineCreateDTO>(lineRequest);
             var lineUpdateDto = await _lineCrudUseCases.AddStop(lineDto, lineId);
             var response = _mapper.Map<LineResource>(lineUpdateDto);
             return StatusCode(200, response);
@@ -55,11 +55,11 @@ public class LineController : ControllerBase
     }
     
     [HttpPut("remove-stop/{lineId}")]
-    public async Task<IActionResult> RemoveStop(LineCreateResource request, long lineId)
+    public async Task<IActionResult> RemoveStop(LineUpdateStopResource lineRequest, long lineId)
     {
         try
         {
-            var lineDto = _mapper.Map<LineCreateDTO>(request);
+            var lineDto = _mapper.Map<LineCreateDTO>(lineRequest);
             var lineUpdateDto = await _lineCrudUseCases.RemoveStop(lineDto, lineId);
             var response = _mapper.Map<LineResource>(lineUpdateDto);
             return StatusCode(200, response);
@@ -72,11 +72,11 @@ public class LineController : ControllerBase
     
 
     [HttpPut("{lineId}")]
-    public async Task<IActionResult> Update(LineCreateResource request, long lineId)
+    public async Task<IActionResult> Update(LineCreateResource lineRequest, long lineId)
     {
         try
         {
-            var lineDto = _mapper.Map<LineCreateDTO>(request);
+            var lineDto = _mapper.Map<LineCreateDTO>(lineRequest);
             var lineUpdateDto = await _lineCrudUseCases.Update(lineDto, lineId);
             var response = _mapper.Map<LineResource>(lineUpdateDto);
             return StatusCode(200, response);

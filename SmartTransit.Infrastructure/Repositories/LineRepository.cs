@@ -6,6 +6,7 @@ using SmartTransit.Domain.Domains.DTO;
 using SmartTransit.Domain.Domains.Exceptions;
 using SmartTransit.Domain.Gateway.Line;
 using SmartTransit.Infrastructure.Entities;
+using SmartTransit.Infrastructure.Entities.Line;
 using SmartTransit.Infrastructure.Entities.Stop;
 using SmartTransit.Infrastructure.Persistence;
 

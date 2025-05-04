@@ -1,8 +1,10 @@
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using SmartTransit.Infrastructure.Entities;
+using SmartTransit.Infrastructure.Entities.Line;
 using SmartTransit.Infrastructure.Entities.Stop;
 using SmartTransit.Infrastructure.Entities.Vehicle;
+using SmartTransit.Infrastructure.Entities.VehiclePosition;
 
 namespace SmartTransit.Infrastructure.Persistence;
 

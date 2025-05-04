@@ -1,5 +1,6 @@
 using AutoMapper;
 using SmartTransit.Application.Resource;
+using SmartTransit.Application.Resource.Login;
 using SmartTransit.Application.Resource.User;
 using SmartTransit.Domain.Domains.DTO;
 using SmartTransit.Infrastructure.Entities;

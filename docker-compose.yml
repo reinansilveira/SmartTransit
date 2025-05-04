@@ -1,6 +1,17 @@
 ﻿version: "3.8"
 
 services:
+  smarttransit_api:
+    build:
+      context: .
+      dockerfile: SmartTransit.Application/Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql_db
+    networks:
+      - SmartTransit_network
+
   mysql_db:
     image: mysql:8.0
     container_name: mysql_db

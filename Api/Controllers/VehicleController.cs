@@ -22,7 +22,7 @@ public class VehicleController : ControllerBase
     }
     
     [HttpPost]
-    public async Task<IActionResult> Create (VehicleResource vehicleRequest)
+    public async Task<IActionResult> Create (VehicleCreateResource vehicleRequest)
     {
         try
         {
@@ -38,11 +38,11 @@ public class VehicleController : ControllerBase
     }
 
     [HttpPut("{vehicleId}")]
-    public async Task<IActionResult> Update (VehicleResource request, long vehicleId)
+    public async Task<IActionResult> Update (VehicleCreateResource vehicleRequest, long vehicleId)
     {
         try
         {
-            var vehicleDto = _mapper.Map<VehicleDTO>(request);
+            var vehicleDto = _mapper.Map<VehicleDTO>(vehicleRequest);
             var vehicleUpdate = await _vehicleCrudUseCases.Update(vehicleDto, vehicleId);
             var response = _mapper.Map<VehicleResource>(vehicleUpdate);
             return StatusCode(200, response);

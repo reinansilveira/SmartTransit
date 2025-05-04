@@ -23,7 +23,7 @@ public class StopController : ControllerBase
     }
     
     [HttpPost]
-    public async Task<IActionResult> Create (StopResource stopRequest)
+    public async Task<IActionResult> Create (StopCreateResource stopRequest)
     {
         try
         {
@@ -39,7 +39,7 @@ public class StopController : ControllerBase
     }
 
     [HttpPut("{stopId}")]
-    public async Task<IActionResult> Update (StopResource request, long stopId)
+    public async Task<IActionResult> Update (StopCreateResource request, long stopId)
     {
         try
         {

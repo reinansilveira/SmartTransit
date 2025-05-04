@@ -1,4 +1,5 @@
 using SmartTransit.Domain.Domains.DTO;
+using SmartTransit.Domain.Domains.DTO.VehiclePositionDTO;
 
 namespace SmartTransit.Domain.Gateway.VehiclePosition;
 

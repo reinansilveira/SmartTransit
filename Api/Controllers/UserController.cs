@@ -3,6 +3,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SmartTransit.Application.Resource;
+using SmartTransit.Application.Resource.Login;
 using SmartTransit.Application.Resource.User;
 using SmartTransit.Domain.Domains.DTO;
 using SmartTransit.Domain.Domains.Exceptions;

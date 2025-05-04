@@ -1,4 +1,4 @@
-namespace SmartTransit.Domain.Domains.DTO;
+namespace SmartTransit.Domain.Domains.DTO.VehiclePositionDTO;
 
 public class VehiclePositionDTO
 {

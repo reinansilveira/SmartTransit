@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartTransit.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+883139edac955feb9cb96fe6947d669744f9bdab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2613dfdcda41eabf3ea4bfb4c6521d3a19c781e")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartTransit.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartTransit.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
